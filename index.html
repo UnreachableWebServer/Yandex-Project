@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="images/favicon.png"/>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" title="theme" href="#">
+    <title>КРОССЫ - И ТОЧКА.</title>
+</head>
+
+<body>
+    <header>
+        <div class="content flex-content">
+            <div class="theme " onclick="clickMusic()">
+                <svg class="change-theme" data-theme="light"  xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-sun" viewBox="0 0 16 16"> <path d="M8 11a3 3 0 1 1 0-6 3 3 0 0 1 0 6zm0 1a4 4 0 1 0 0-8 4 4 0 0 0 0 8zM8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0zm0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13zm8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5zM3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8zm10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0zm-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0zm9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707zM4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708z"/> </svg>
+                <svg class="change-theme" data-theme="dark"  xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-moon" viewBox="0 0 16 16"> <path d="M6 .278a.768.768 0 0 1 .08.858 7.208 7.208 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277.527 0 1.04-.055 1.533-.16a.787.787 0 0 1 .81.316.733.733 0 0 1-.031.893A8.349 8.349 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.752.752 0 0 1 6 .278zM4.858 1.311A7.269 7.269 0 0 0 1.025 7.71c0 4.02 3.279 7.276 7.319 7.276a7.316 7.316 0 0 0 5.205-2.162c-.337.042-.68.063-1.029.063-4.61 0-8.343-3.714-8.343-8.29 0-1.167.242-2.278.681-3.286z"/> </svg>
+            </div>
+            <script src="main.js"></script>
+            <a href="#">
+                <img class="header__logo" src="images/logo_header.svg" alt="">
+            </a>
+            <nav>
+                <ul class="navbar">
+                    <li><a href="blank_page.html">💬 TG</a></li>
+                    <li><a href="blank_page.html">😊 VK</a></li>
+                    <li><a href="blank_page.html">📺 YouTube</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section class="content">
+            <h1 class="content__title">Коллекция. {ноябрь:2023}</h1>
+            <div class="container">
+                <a href="sneakers2.html" class="card__link">
+                    <div class="card">
+                        <img class="card__image" src="images/sneakers8.png" alt="sneakers-picture-8">
+                        <div class="card__description">
+                            <h2 class="card__name">New Balance 574 YURT</h2>
+                            <p class="card__information">Salehe Bembury Shark Skin</p>
+                        </div>
+                    </div>
+                </a>
+                <a href="sneakers1.html" class="card__link">
+                    <div class="card"> 
+                        <img class="card__image" src="images/sneakers1.png" alt="sneakers-picture-1">
+                        <div class="card__description">
+                            <h2 class="card__name">Nike Dunk Low SP</h2>
+                            <p class="card__information">Nike Dunk Low Orange Blaze Syracuse</p>
+                        </div>
+                    </div>
+                </a>
+                <a href="sneakers3.html" class="card__link">
+                    <div class="card">
+                        <img class="card__image" src="images/sneakers3.png" alt="sneakers-picture-3">
+                        <div class="card__description">
+                            <h2 class="card__name">Converse Chuck 70 High</h2>
+                            <p class="card__information">Comme des Garcons PLAY Black</p>
+                        </div>
+                    </div>
+                </a>
+                <div class="card" onclick="errorMusic(); location.href='#openModal'">
+                    <img class="card__image" src="images/sneakers2.jfif" alt="sneakers-picture-2">
+                    <div class="card__description">
+                        <h2 class="card__name">adidas Yeezy Foam RNNR</h2>
+                        <p class="card__information">Stone Sage</p>
+                    </div>
+                </div>
+                <div class="card" onclick="errorMusic(); location.href='#openModal'">
+                    <img class="card__image" src="images/sneakers4.png" alt="sneakers-picture-4">
+                    <div class="card__description">
+                        <h2 class="card__name">Nike Air Max Plus</h2>
+                        <p class="card__information">Patta FC Barcelona Culers del Món</p>
+                    </div>
+                </div>
+                <div class="card" onclick="errorMusic(); location.href='#openModal'">
+                    <img class="card__image" src="images/sneakers5.jfif" alt="sneakers-picture-5">
+                    <div class="card__description">
+                        <h2 class="card__name">Jordan 1 Retro High OG SP</h2>
+                        <p class="card__information">Union LA Bephies Beauty Supply Summer of ‘96</p>
+                    </div>
+                </div>
+                <div class="card" onclick="errorMusic(); location.href='#openModal'">
+                    <img class="card__image" src="images/sneakers6.jpg" alt="sneakers-picture-6">
+                    <div class="card__description">
+                        <h2 class="card__name">adidas Campus 00s</h2>
+                        <p class="card__information">Core Black</p>
+                    </div>
+                </div>
+                <div class="card" onclick="errorMusic(); location.href='#openModal'">
+                    <img class="card__image" src="images/sneakers7.jpg" alt="sneakers-picture-7">
+                    <div class="card__description">
+                        <h2 class="card__name">UGG Classic Ultra Mini Boot</h2>
+                        <p class="card__information">Chestnut (Women's)</p>
+                    </div>
+                </div>
+                <div class="card" onclick="errorMusic(); location.href='#openModal'">
+                    <img class="card__image" src="images/sneakers9.png" alt="sneakers-picture-9">
+                    <div class="card__description">
+                        <h2 class="card__name">Jordan 1 Retro Low Golf</h2>
+                        <p class="card__information">Travis Scott Neutral Olive</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div id="openModal" class="modal">
+            <div class="modal__dialog">
+              <div class="modal__content">
+                  <h3 class="modal__title">Возникла непредвиденная ошибка</h3>
+                  <a href="#close" title="Close" class="close">×</a>
+              </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="content">
+            <div class="flex-content">
+                <a href="#">
+                    <img class="footer__logo" src="images/logo_footer.png" alt="">
+                </a>
+                <nav>
+                    <ul class="footer__nav">
+                        <li><a href="blank_page.html">💬 TG</a></li>
+                        <li><a href="blank_page.html">😊 VK</a></li>
+                        <li><a href="blank_page.html">📺 YouTube</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="line"></div>
+            <p class="footer_paragraph">КРОССЫ И ТОЧКА ® 2023</p>
+        </div>
+    </footer>
+</body>
+
+</html>
