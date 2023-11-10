@@ -1,0 +1,252 @@
+.theme {
+    animation-name: none;
+}
+
+.card__section {
+    max-width: 1305px;
+    margin: 0px auto;
+    background: #FFF;
+    border-radius: 50px;
+}
+
+.similar__section {
+    width: 100%;
+    max-width: 1305px;
+    margin: 0px auto;
+}
+
+.card__content {
+    padding: 48px;
+    margin-bottom: 48px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 32px;
+}
+
+.card-big__image {
+    width: 100%;
+    height: 700px;
+    object-fit: cover;
+    border-radius: 50px;
+}
+
+.card-big__description {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 24px;
+}
+
+.sneakers-big__additional-info {
+    display: flex;
+    align-items: flex-start;
+    gap: 32px;
+    align-self: stretch;
+}
+
+.sneakers-big__text {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    flex: 1 0 0;
+}
+
+.sneakers-big-parameters {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    align-self: stretch;
+    gap: 24px;
+    flex: 1 0 0;
+}
+
+.sneakers-big__parametr-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    align-self: stretch;
+}
+
+.sneakers-big__text p {
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px; /* 140% */
+}
+
+.sneakers-big__parametr-line {
+    height: 1px;
+    align-self: stretch;
+    background: #121723;
+}
+
+.sneakers-big__title {
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 100%; /* 48px */
+}
+
+.sneakers-big__subtitle {
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 100%; /* 36px */
+}
+
+.sneaker-big__parameters-title {
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.sneakers-big__parametr-info h2 {
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.sneaker__similar {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 32px;
+}
+
+.sneaker__similar-text {
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 100%;
+}
+
+.sneaker__similar-sneaker {
+    display: flex;
+    align-items: flex-start;
+    gap: 24px;
+}
+
+@media screen and (min-width: 1100px) and (max-width: 1465px) {
+
+    .card__section {
+        width: 951px;
+        border-radius: 30px;
+    }
+
+    .card-big__image {
+        height: 550px;
+        border-radius: 30px;
+    }
+
+    .similar__section {
+        width: 951px;
+    }
+
+}
+
+@media screen and (min-width: 921px) and (max-width: 1099px) {
+
+    .card__section {
+        width: 768px;
+        border-radius: 20px;
+    }
+
+    .card-big__image {
+        height: 450px;
+        border-radius: 20px;
+    }
+
+    .similar__section {
+        width: 768px;
+    }
+
+    .sneakers-big__title {
+        font-size: 40px;
+    }
+    
+    .sneakers-big__subtitle {
+        font-size: 30px;
+    }
+
+    .sneakers-big__text p {
+        font-size: 18px;
+    }
+
+    .sneaker-big__parameters-title {
+        font-size: 26px;
+    }
+
+    .sneakers-big__parametr-info h2 {
+        font-size: 18px;
+    }
+
+    .sneaker__similar-text {
+        font-size: 38px;
+    }
+
+}
+
+@media screen and (max-width: 920px) {
+
+    .card__section {
+        width: 350px;
+        border-radius: 12px;
+    }
+
+    .card__content {
+        padding: 24px;
+    }
+
+    .card-big__image {
+        height: 172px;
+        border-radius: 12px;
+    }
+
+    .similar__section {
+        width: 350px;
+    }
+    
+    .sneakers-big__additional-info {
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .sneakers-big__title {
+        font-size: 32px;
+    }
+    
+    .sneakers-big__subtitle {
+        font-size: 20px;
+    }
+
+    .sneakers-big__text p {
+        font-size: 16px;
+        line-height: 24px
+    }
+
+    .sneaker-big__parameters-title {
+        font-size: 24px;
+    }
+
+    .sneakers-big__parametr-info h2 {
+        font-size: 16px;
+    }
+
+    .sneaker__similar-text {
+        font-size: 32px;
+    }
+
+    .card__description {
+        width: 350px;
+    }
+
+    .sneaker__similar-sneaker {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 24px;
+    }
+
+}

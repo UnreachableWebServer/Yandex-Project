@@ -1,0 +1,9 @@
+/* Styles are missing */
+
+.change-theme[data-theme="dark"] {
+    display: block;
+}
+
+.change-theme[data-theme="light"] {
+    display: none;
+}

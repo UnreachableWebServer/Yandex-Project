@@ -1,0 +1,85 @@
+body {
+    background: #171717;
+    color: #F1F1F1;
+}
+
+/* Styles for pop-up window */
+.modal__content {
+    background-color: #0b0b0b;
+}
+
+.modal__title {
+    color: #FAFAFA;
+}
+
+.close {
+    color: #FAFAFA;
+}
+
+.close:focus, .close:hover {
+    color: #ffffff;
+}
+
+/* Other styles */
+.header__logo {
+    content: url('../images/light_logo_header.svg');
+}
+
+.theme {
+    background: #444444;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+header {
+    background-color: #0c0c0c50;
+    border-bottom: 1px solid rgb(39, 39, 39);
+}
+
+.navbar a,
+.footer__nav a {
+    color: #FAFAFA;
+}
+
+.card__link {
+    color: #F1F1F1;
+}
+
+.card__section {
+    background: #383838;
+}
+
+.card__description {
+    background-color: #383838;
+}
+
+.card-big__image{
+    opacity: 0.6;
+}
+
+.card__image {
+    opacity: 0.6;
+}
+
+.card:hover {
+    box-shadow: rgba(120, 120, 120, 0.2) 0px 30px 20px -7px;
+}
+
+footer {
+    background-color: #0c0c0c;
+}
+
+.sneakers-big__parametr-line {
+    background: #ffffff;
+}
+
+.line {
+    background: rgba(230, 232, 236, 0.40);
+}
+
+.change-theme[data-theme="dark"] {
+    display: none;
+}
+
+.change-theme[data-theme="light"] {
+    display: block;
+}
