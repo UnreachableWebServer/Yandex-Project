@@ -329,8 +329,8 @@ footer {
     filter: blur(20px);
     transform-origin: center center;
     position: absolute;
-    z-index: 2s;
-    animation-delay: 3s;
+    z-index: 1;
+    animation-delay: 2s;
     animation-name: mask-border-animation;
     animation-duration: 1.5s;
 }
