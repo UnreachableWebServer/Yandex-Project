@@ -21,6 +21,56 @@ main {
     flex-grow: 1;
 }
 
+/* ------------------------- */
+
+.loader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: #ffffff;
+    transition: opacity 0.75s, visibility 0.75s;
+}
+
+.loader-hidden {
+    opacity: 0;
+    visibility: hidden;
+}
+
+.loader_information h3 {
+    font-size: 40px;
+}
+
+.loader_information {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+}
+
+.circle {
+    content: '';
+    width: 75px;
+    height: 75px;
+    border: 15px solid #dddddd;
+    border-top-color: rgb(255, 130, 130);
+    border-radius: 50%;
+    animation: loading 1s ease infinite;
+}
+
+@keyframes loading {
+    from {transform: rotate(0turn);}
+    to {transform: rotate(1turn);}
+}
+
+/* ------------------------- */
+
 /* Styles for pop-up window */
 .modal {
     position: fixed;
@@ -86,6 +136,7 @@ main {
 .theme {
     animation-name: slide;
     animation-duration: 1.5s;
+    animation-delay: 2.5s;
     position: absolute;
     top: 10px;
     left: 10px;
@@ -172,10 +223,16 @@ li {
 .card {
     display: flex;
     flex-direction: column;
+    cursor: pointer;
     max-width: 500px;
     height: 100%;
-    cursor: pointer;
     transition: 0.5s;
+}
+
+.card__animation {
+    box-sizing: border-box;
+    overflow: hidden;
+    position: relative;
 }
 
 .card__image {
@@ -248,38 +305,63 @@ footer {
         transform: translateY(0);
                 opacity: 1;
     }
-} 
-
-/* The most miserable adaptive layout :3 */
-@media screen and (min-width: 1100px) and (max-width: 1465px) {
-    
-    * {
-        box-sizing: border-box;
-    }
-    
-    .content {
-        max-width: 951px;
-    }
-
-    .card {
-        width: 301px;
-    }
-
-    .card__image {
-        height: 200px;
-    }
-    
-    .card__description {
-        width: 100%;
-    }
-
-    .footer_paragraph {
-        font-size: 16px;
-    }
-
 }
 
-@media screen and (min-width: 921px) and (max-width: 1099px) {
+/* Additional animation of the glare on the cards */
+
+.card__animation::before {
+    content:'';
+    opacity: 1;
+    transform-origin: center center;
+    position: absolute;
+    z-index: 10;
+    animation-delay: 0.5s;
+    animation-name: mask-animation;
+    animation-duration: 1.5s;
+}
+
+.card__animation::after {
+    content: '';
+    width: 600px;
+    height: 50px;
+    opacity: 0;
+    background-color: rgba(255, 255, 255, 0.5);
+    filter: blur(20px);
+    transform-origin: center center;
+    position: absolute;
+    z-index: 1;
+    animation-delay: 3s;
+    animation-name: mask-border-animation;
+    animation-duration: 1.5s;
+}
+
+@keyframes mask-animation {
+    0% {
+      transform: rotate(-36deg) translate(-40px, -430px);
+    }
+  
+    70%,
+    100% {
+      transform: rotate(-36deg) translate(-40px, 378px);
+    }
+}
+
+@keyframes mask-border-animation {
+    0% {
+      opacity: 0.8;
+      transform: rotate(-36deg) translate(-126px, -190px);
+    }
+  
+    70%,
+    100% {
+      opacity: 0.8;
+      transform: rotate(-36deg) translate(-170px, 430px);
+    }
+}
+
+/* The most miserable adaptive layout :3 */
+
+@media screen and (min-width: 1080px) and (max-width: 1465px) {
 
     * {
         box-sizing: border-box;
@@ -299,15 +381,15 @@ footer {
     }
 
     .content {
-        max-width: 768px;
+        max-width: 920px;
     }
 
     .card {
-        width: 240px;
+        width: 290px;
     }
 
     .card__image {
-        height: 150px;
+        height: 170px;
     }
     
     .card__description {
@@ -326,11 +408,23 @@ footer {
         font-size: 16px;
     }
 
+    .loader {
+        text-align: center;
+    }
+
+    .loader img {
+        max-width: 650px;
+    }
+
+    .loader_information h3 {
+        font-size: 32px;
+    }
+
 }
 
 /* Mobile version corresponding to layout */
 
-@media screen and (max-width: 920px) {
+@media screen and (max-width: 1079px) {
 
     * {
         box-sizing: border-box;
@@ -377,6 +471,19 @@ footer {
 
     .line {
         margin: 24px 0px;
+    }
+
+    .loader {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .loader img {
+        max-width: 500px;
+    }
+
+    .loader_information h3 {
+        font-size: 26px;
     }
 
 }
