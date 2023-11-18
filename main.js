@@ -29,3 +29,14 @@ function clickMusic() {
     var musicClick = new Audio('sounds/button_click.mp3');
     musicClick.play();
 }
+
+
+window.addEventListener("load", () => {
+    const loader = document.querySelector(".loader");
+    setTimeout(function() {
+        loader.classList.add("loader-hidden");
+        loader.addEventListener("transitionend", () => {
+            document.body.removeChild(loader);
+        })
+    }, 2500);
+});
